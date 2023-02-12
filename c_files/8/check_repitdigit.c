@@ -11,8 +11,8 @@ int main(void){
     long num;
     Bool digit_seen[10] = {false};
 
-    printf("This program  checks a number for repeated numbers\n");
-    printf("Enter number: ");
+    printf("This program  checks a number for repeated numbers\n\n");
+    printf("Enter number to check for repeated digit: ");
     scanf("%ld", &num);
 
     while (num != 0){
