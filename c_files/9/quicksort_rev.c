@@ -27,6 +27,10 @@ int main(void) {
    return 0;
 }
 
+//quick_sort: calls the split function to sort, 
+//then divides array into two parts one which contains numbers less than the partiioning element
+//and one who has numbers greater than the partitioning element 
+//then calls itself to repeat the operation until low >= high
 void quick_sort(int a[], int high, int low) {
     int middle;
 
@@ -37,6 +41,8 @@ void quick_sort(int a[], int high, int low) {
     quick_sort(a, middle + 1, low);
 }
 
+//split function: sorts the numbers till high is >= low and places the partitioning elenment
+//in the position where high >= low
 int split(int a[], int high, int low) {
     int part_element = a[high];
 
@@ -60,3 +66,5 @@ int split(int a[], int high, int low) {
     a[high] = part_element;
     return high;  
 }
+//high is always to point (subscript) numbers greater than the partitioning element
+//low is alwys to point (subscript) numbers less than the partitioning element

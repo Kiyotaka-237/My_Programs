@@ -24,13 +24,13 @@ int main(void){
       printf("Enter number of cards in and: ");
       scanf("%d", &num_cards);
 
-// passing the return value of time() to srand to prevent the picking of same cards each program runs   
+// passing the return value of time() to srand to prevent the picking of same cards each time program runs   
       srand((unsigned) time(NULL));  
 
       printf("cards in hand: ");
     
       while (num_cards > 0){
-//asigning a random number to rank and suit within their respevctive ranges
+
         rank = rand() % NUM_RANKS;
         suit = rand() % NUM_SUITS;
 
