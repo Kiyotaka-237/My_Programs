@@ -15,5 +15,5 @@ int main(void) {
     printf("Average of %.2lf and %.2lf: %.2lf\n", num1, num3, average(num1, num3));
     printf("Average of %.2lf and %.2lf: %.2lf\n", num3, num2, average(num3, num2));
 
-    return 0;
+    return (0);
 }

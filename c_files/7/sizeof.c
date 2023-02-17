@@ -7,7 +7,7 @@ int main(void){
      getchar();
 
     printf("\nsizeof(int) sizeof(short) sizeof(long) sizeof(float) sizeof(double) sizeof(long double)\n");
-    printf("%5lu %12lu %14lu %13lu %13lu %15lu", sizeof(int), sizeof(short), sizeof(long), 
+    printf("%5lu %12lu %14lu %13zu %13zu %15zu", sizeof(int), sizeof(short), sizeof(long), 
                                                  sizeof(float), sizeof(double), sizeof(long double));
 
     printf("\n");
