@@ -5,7 +5,6 @@
 int main(void) {
 
     char msg[100], *p = msg, ch;
-    int n = 0;
     
     printf("Enter message: ");
     while ((ch = getchar()) != '\n')
