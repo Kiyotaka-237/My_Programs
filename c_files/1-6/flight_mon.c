@@ -19,7 +19,7 @@ int main(void) {
     //convert usr time in minutes from mifnight
     comp = (usr_tm_hr * 60) + usr_tm_min;
 
-    if (comp <= t0)
+    if (comp <= t0 || comp >= t7)
        printf("closest departure time is 8:00 a.m, arrinving at 10:16 a.m");
     else
     if (comp >= t0 && comp <= t1)
