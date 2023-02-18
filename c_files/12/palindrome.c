@@ -5,23 +5,22 @@
 #define MAX_LEN 100
 
 int main(void) {
-    char messge[MAX_LEN], ch;
-    int i, j;
+    char mssge[MAX_LEN], *p = mssge, *q = mssge, ch;
 
-    printf("Enter message to check if palindrome: ");
+    printf("Entter message to check if palindrome: ");
     while ((ch = toupper(getchar())) != '\n') {
         if ((ch >= 'A' && ch <= 'Z'))
-            messge[i++] = ch;
+           *p++ = ch;
     }
 
-    for (i--, j = 0; j <= i; j++, i--){
-        if (messge[j] != messge[i])
-            break;
+    for(p--; q <= p; q++, p--) {
+        if (*q != *p)
+           break;
     }
 
-    if (j > i)
+    if (q > p)
        printf("Palindrome\n");
-    else printf("Not a palindrome\n");
-
+    else
+    printf("Not a palindrome\n");
     return 0;
 }
