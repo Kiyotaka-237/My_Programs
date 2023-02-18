@@ -21,7 +21,7 @@ int main(void) {
 
     if (j > i)
        printf("Palindrome\n");
-    else printf("message is not a palindrome\n");
+    else printf("Not a palindrome\n");
 
     return 0;
 }
