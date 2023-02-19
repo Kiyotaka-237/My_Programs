@@ -5,7 +5,7 @@
 #define NUM_PLANETS 9
 
 int main(int argc, char *argv[]) {
-    char *planets[] = {"Mercury", "Vecus", "Earth",
+    char *planets[] = {"Mercury", "Venus", "Earth",
                        "Mars", "Jupiter", "Saturn",
                         "Uranus", "Neptune", "Pluto"};
     int i, j;
