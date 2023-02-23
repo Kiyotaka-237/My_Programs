@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="youtube.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="sidebar.css">
 
   </head>
   <body>
@@ -22,26 +23,49 @@
         <input class="search-bar" type="textbox" placeholder="Search">
         <button class="search-icon">
           <img class="search-ic" src="icons/search.svg">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search">
           <img class="microph" src="icons/voice-search-icon.svg">
-        </button>
+          <div class="tooltip">Search with your voice</div>
+        </button> 
       </div>
       <div class="right-section">
-          <img class="record-icon" src="icons/record.svg">
+        <img class="record-icon" src="icons/record.svg">
 
-          <img class="square-icon" src="icons/squa.svg">
-
+        <img class="square-icon" src="icons/squa.svg">
+        <div class="notification-icon-container">
           <img class="notification-icon" src="icons/notifications.svg">
-
-          <img class="acc-profile-button" src="icons/own.jpeg">
+          <div class="notification-count">3</div>
+        </div>
+        
+        <img class="acc-profile-button" src="icons/own.jpeg">
 
       </div> 
+    </div>
+     <div class="side-bar">
+      <div class="sidebar-link">
+        <img class="home" src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="explore" src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="originals" src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="" src="icons/library.svg">
+        <div>library</div>
+      </div>
     </div>
     <div class="video-grid">
     <div class="video-preview">
     <div class="thumbnail-v">
       <img class="thumbnail" src="thumbnails/y1.webp"> 
+      <div class="video-time">14:20</div>
     </div>
     <div class="video-info-grid">
       <div class="channel-pic">
@@ -139,4 +163,4 @@
         </div>
     </div>
   </body>
-</html> 
+</html>    

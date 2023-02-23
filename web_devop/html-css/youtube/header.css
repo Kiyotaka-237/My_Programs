@@ -3,6 +3,15 @@
     height: 55px;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
 }
 
 .left-section { 
@@ -39,13 +48,13 @@
 
 .right-section {
     display: flex;
-    height: 55px;
+    height: 55px;  
     width: 180px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-right: 21px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
 }
 
 .youtube-logo {
@@ -66,6 +75,13 @@
     border: none;
 }
 
+.search-icon, 
+.voice-search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search-icon {
     height: 36px;
     width: 66px;
@@ -76,6 +92,31 @@
     border-color: rgb(192, 192, 192 );
     margin-left: -1px;
     margin-right: 10px;
+    position: relative;
+}
+
+.search-icon .tooltip,
+.voice-search .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15 ;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-icon:hover .tooltip,
+.voice-search:hover .tooltip {
+    opacity: 1;
 }
 
 .search-ic {
@@ -83,8 +124,8 @@
 }
 
 .microph {
-    height: 21px;
-} 
+    height: 25px;
+}
 
 .record {
     height: 24px;
@@ -107,9 +148,28 @@
 }
 
 .notification-icon {
-    height: 20px;
+    height: 23px;
 }
 
+.notification-icon-container {
+    position: relative;
+    
+}
+
+.notification-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
 .square-icon {
     height: 24px;
 }
