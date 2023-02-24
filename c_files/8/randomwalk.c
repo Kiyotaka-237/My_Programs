@@ -16,7 +16,7 @@ int main(void) {
         up = down = left = right = 0;
 
         /*prevents moving out of array and 
-        writting in an element that already has an assigned letter
+        * writting in an element that already has an assigned letter
         */
         if ((j + 1) < 10 && grid[i][j + 1] == 0)
             up = 1;
