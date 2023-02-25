@@ -72,5 +72,5 @@ bool play_game(void) {
             return true;
         }
     }
-
+ame();
 }
