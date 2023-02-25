@@ -30,6 +30,9 @@ int main(void) {
     return 0;
 }
 
+/* roll_dice: picks a random number between 1 and 6 
+* for the 2 dice
+*/
 int roll_dice(void) {
     int num1, num2;
 
@@ -38,6 +41,11 @@ int roll_dice(void) {
 
     return (num1 + num2);
 }
+
+/* play_game: uses the return value of roll dice
+* to determine if the user wins or losses based on 
+* certain criterias
+*/
 bool play_game(void) {
     int dice_value, point;
 
