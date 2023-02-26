@@ -17,6 +17,10 @@ void read_cards(void);
 void analyze_hand(void);
 void print_result(void);
 
+
+/*
+ *main: calls read_card(), analyze_hand(), and print_result() repeatedly
+ */
 int main(void) {
     for (; ;) {
         read_cards();
@@ -25,7 +29,11 @@ int main(void) {
     }
 }
 
-
+/*
+ * read_cards: reads the cards in the hand of user one by one
+ *             into the external varibles num_in_rand and num_in_suit.
+ *             checks for bad and duplicate cards.
+ */
 void read_cards(void) {
 
     bool card_exist[NUM_RANKS][NUM_SUITS];
@@ -93,6 +101,10 @@ void read_cards(void) {
     }   
 }
 
+/*
+ * analyze_hand: determines if the hand contains a
+ *               what kind of poker hand the user has
+ */
 void analyze_hand(void) {
     int num_consec = 0;
     int rank, suit;
@@ -126,6 +138,11 @@ void analyze_hand(void) {
     }
     }
 }
+
+/*
+ * print_result: using the information provided by analyze_hand
+ *               it prints the type of poker hand the user has
+ */
 
 void print_result(void) {
 
