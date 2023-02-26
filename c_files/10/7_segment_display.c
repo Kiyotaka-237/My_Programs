@@ -1,3 +1,4 @@
+//displays a number in a seven segiment display form
 #include <stdio.h>
 #include <ctype.h>
 
