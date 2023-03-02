@@ -3,8 +3,8 @@
 
 int main(void) {
     const char *month[12] = {"January", "February", "March", "April", "May", "June",
-                        "July", "August", "September", "October", "November",
-                        "December"};
+                             "July", "August", "September", "October", "November",
+                             "December"};
     int mon, day, year;
 
     printf("Enter a date (mm/dd/yyyy): ");
