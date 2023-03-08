@@ -1,13 +1,9 @@
 //prints a date entered
 #include <stdio.h>
+#include "header.h"
 
-#define start {
-#define stop }
-#define or ||
-#define give printf
-#define take scanf
-
-int main(void) start
+int main(void) 
+start
     const char *month[12] = start"January", "February", "March", "April", "May", "June",
                              "July", "August", "September", "October", "November",
                              "December"stop;
