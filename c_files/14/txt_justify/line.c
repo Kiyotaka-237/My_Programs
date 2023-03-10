@@ -26,7 +26,7 @@ void add_word(const char *word) {
 }
 
 int space_remaining(void) {
-    return MAX_LINE_LEN - line_len;
+    return (MAX_LINE_LEN - line_len);
 }
 
 void write_line(void) {
@@ -38,7 +38,7 @@ void write_line(void) {
             putchar(line[i]);
         else {
             spaces_to_insert = extra_spaces /  (num_words - 1);
-            for (j = 0; j < spaces_to_insert; j++)
+            for (j = 1; j < spaces_to_insert + 1; j++)
                 putchar(' ');
             extra_spaces -= spaces_to_insert;
             num_words--;

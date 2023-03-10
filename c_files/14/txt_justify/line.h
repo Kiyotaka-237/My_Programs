@@ -7,8 +7,8 @@
 void clear_line(void);
 
 /**
- * word_add: Adds word to the end of the current line.
- *           If this is not the first word on theline,
+ * add_word: Adds word to the end of the current line.
+ *           If this is not the first word on the line,
  *           puts one space before word.
 */
 void add_word(const char *word);
@@ -25,6 +25,7 @@ int space_remaining(void);
 void write_line(void);
 
 /**
+ * 
  * flush_line: Writes the current line without justification.
  *             If the line is empty, nothing.
 */

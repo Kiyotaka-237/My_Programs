@@ -5,8 +5,9 @@
  * read_word: Reads the next word from the input and 
  *            stores it in word. Makes word empty if no
  *            word could be read because of end-of-file.
- *            Truncates the word if its length exceeds len.
+ *            Truncates the word if its length exceeds len,
+ *            and returns the length of the word.
 */
-void read_word(char *word, int len);
+int read_word(char *word, int len);
 
 #endif
