@@ -1,4 +1,6 @@
 Cisquirky,flawed, and an enourmous success. Although
 accidentsofhistorysurelyhelped,itevidentlysatisfieda
 needforasystemimplementationlanguage efficient enough
-to displace assembly language, yet suffici.
+todisplaceassemblylanguage,yetsufficientlyabstractand
+fluenttodescribealgorithmsand interactions in a wide
+variety of enviroments. -- Denis M. Ritchie
