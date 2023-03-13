@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "readeline.h"
+#include "readline.h"
 
 int read_line(char str[], int n) {
     
