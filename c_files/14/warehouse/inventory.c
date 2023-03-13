@@ -24,7 +24,7 @@ int main(void) {
     char code;
 
     for (; ;) {
-        print("Enter operation code: ");
+        printf("Enter operation code: ");
         scanf(" %c", &code);
 
         while (getchar() != '\n')
@@ -122,7 +122,7 @@ void print(void) {
             Quantity on Hand\n");
 
     for (i = 0; i < num_parts; i++) {
-        print("%7d      %-25s%11d\n", inventory[i].number, inventory[i].name
+        printf("%7d      %-25s%11d\n", inventory[i].number, inventory[i].name,
                                       inventory[i].on_hand);
     }
 }
