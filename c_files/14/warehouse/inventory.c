@@ -49,7 +49,7 @@ int main(void) {
 int find_part(int number) {
     int i;
 
-    for (i = 0; i <= num_parts; i++) {
+    for (i = 0; i < num_parts; i++) {
         if (inventory[i].number == number)
             return i;
         return -1;
@@ -76,6 +76,7 @@ void insert(void) {
     inventory[num_parts].number = part_number;
     printf("Enter part name: ");
     read_line(inventory[part_number].name, NAME_LEN);
+    printf("%s\n", inventory[part_number].name);
     printf("Enter quantity on hand: ");
     scanf("%d", &inventory[num_parts].on_hand);
     num_parts++;
@@ -89,6 +90,7 @@ void search(void) {
     scanf("%d", &number);
 
     i = find_part(number);
+    printf("%d", i);
     if (i >= 0) {
         printf("Part name: %s\n", inventory[i].name);
         printf("Quantity on hand: %d\n", inventory[i].on_hand);
